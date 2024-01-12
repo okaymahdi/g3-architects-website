@@ -21,19 +21,22 @@ header > nav {
 .btn-primary {
   font-size: 1.25rem;
   font-weight: 600;
-  padding: 20px 25px;
   color: #fff;
   background: #ff900e;
-  border: none;
-  border-radius: 8px;
-  margin: 50px auto;
-  width: 207px;
+  padding: 20px 25px;
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  width: 11.86rem;
   height: 64px;
   transition: 0.4s;
 }
 
 .btn-primary:hover {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: #ff900e;
+  border: 2px solid #ff900e;
+  background: none;
 }
 
 /* menu item */
@@ -82,5 +85,28 @@ nav li a {
 
 .banner > img {
   width: 100%;
-  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* responsive media queries */
+/* mobile devises */
+@media only screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    header > nav {
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devises */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+    
+    header > nav {
+        flex-direction: column;
+    }
 }
