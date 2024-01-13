@@ -24,8 +24,10 @@ header > nav {
   color: #fff;
   background: #ff900e;
   padding: 20px 25px;
+  margin: 32px auto;
   border-radius: 0.5rem;
   border: 0;
+  outline: 0;
   cursor: pointer;
   width: 11.86rem;
   height: 64px;
@@ -36,6 +38,7 @@ header > nav {
   font-size: 1.3rem;
   color: #ff900e;
   border: 2px solid #ff900e;
+  outline: none;
   background: none;
 }
 
@@ -109,4 +112,46 @@ nav li a {
     header > nav {
         flex-direction: column;
     }
+}
+
+/* main section */
+main {
+  max-width: 1440px;
+  padding: 70px auto;
+}
+
+/* teams section */
+.teams-container {
+  display: flex;
+  align-items: center;
+}
+
+.teams-img-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.teams-content {
+  padding: 0 70px;
+}
+
+.teams-title {
+  font-size: 2.8rem;
+  margin: 0 auto;
+}
+
+.quick-list {
+  font-weight: 500;
+  color: #727272;
+}
+
+.of-our {
+  font-weight: 700;
+  color: #131313;
+}
+
+.text-features {
+  font-weight: 700;
+  color: #FF900E;
 }
