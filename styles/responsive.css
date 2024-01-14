@@ -1,0 +1,44 @@
+/* responsive media queries */
+/* mobile devises */
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+
+  header > nav,
+  .teams-container
+  {
+    flex-direction: column;
+  }
+
+  .teams-img-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem 0;
+    justify-items: center;
+  }
+
+  .teams-content {
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+}
+
+/* tablet or medium devises */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+
+  header > nav, 
+  .teams-container
+  {
+    flex-direction: column;
+  }
+
+  .teams-content {
+    padding: 0 70px;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
